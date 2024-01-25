@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.8
   - numpy>=1.10.0
-  - pandas>=1,<2.0.0
+  - pandas>=1.5.3
   - matplotlib
   - scikit-learn
   - tqdm
