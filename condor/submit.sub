@@ -1,0 +1,9 @@
+executable            = DIRECTORY/JOBNAME.sh
+arguments             = $(ClusterId)$(ProcId)
+output                = DIRECTORY/logs/JOBNAME.$(ClusterId).$(ProcId).out
+error                 = DIRECTORY/logs/JOBNAME.$(ClusterId).$(ProcId).err
+log                   = DIRECTORY/logs/JOBNAME.$(ClusterId).$(ProcId).log
+
++JobFlavour           = JOBFLAVOUR
++SingularityImage     = "/cvmfs/unpacked.cern.ch/registry.hub.docker.com/daocampo/gnn_test:latest"
+queue 1
